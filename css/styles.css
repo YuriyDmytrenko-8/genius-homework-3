@@ -1,0 +1,224 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --color-primary-white: #ffffff;
+  --color-primary-light: #2b7fff;
+  --color-primary-dark: #011c44;
+  --color-secondary-dark: #4a4a4a;
+  --color-secondary-light: #747272;
+  --color-secondary-blue: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+  --color-secondary-black: #000000;
+}
+
+/* base styles */
+
+body {
+  color: var(--color-primary-dark);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+span {
+  color: var(--color-primary-light);
+}
+
+.button {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+.section-title {
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* header */
+
+.logo-header {
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 0.95;
+  color: var(--color-primary-light);
+  text-transform: capitalize;
+}
+
+.link-header {
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--color-primary-dark);
+}
+
+.link-header:hover {
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+/* hero-section */
+
+.hero-section {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.hero-accent {
+  color: var(--color-primary-dark);
+  font-size: 12px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  color: var(--color-primary-light);
+  line-height: 0.8;
+  text-transform: capitalize;
+}
+
+/* about-section */
+
+.about-title {
+  text-align: left;
+}
+
+.about-title-accent {
+  text-transform: capitalize;
+}
+
+.about-accent {
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--color-primary-dark);
+}
+
+#about-section {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+/* reasons-section */
+
+.reasons-list {
+  color: var(--color-secondary-black);
+  text-align: center;
+  line-height: 1.33;
+  font-size: 18px;
+}
+
+/* procedures-section */
+
+.procedures-list {
+  color: var(--color-primary-white);
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+/* contacts-section */
+
+.contacts-text {
+  background-color: var(--color-primary-dark);
+  color: var(--color-primary-white);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.contacts-copyright {
+  color: var(--color-secondary-light);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.contacts-link {
+  color: var(--color-secondary-light);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--color-primary-dark);
+}
+
+.logo-footer {
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.9;
+  color: var(--color-primary-light);
+  text-transform: capitalize;
+}
+
+.link-footer {
+  color: var(--color-primary-white);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.address-copyright {
+  color: var(--color-secondary-light);
+  font-size: 13px;
+  line-height: 1.5;
+}
