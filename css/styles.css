@@ -173,8 +173,11 @@ h1 {
 
 /* contacts-section */
 
-.contacts-text {
+.contacts-bgc {
   background-color: var(--color-primary-dark);
+}
+
+.contacts-text {
   color: var(--color-primary-white);
   font-size: 22px;
   font-weight: 700;
@@ -215,6 +218,10 @@ footer {
   color: var(--color-primary-white);
   font-size: 16px;
   line-height: 1.5;
+}
+
+.link-footer:hover {
+  color: var(--color-primary-light);
 }
 
 .address-copyright {
